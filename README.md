@@ -12,3 +12,10 @@ dataPath=’~/Downloads/powell24_data/fig_1_data.mat’;
 powell24_figure1(dataPath);
 
 Requirements: Matlab, Statistics and Machine Learning Toolbox. Tested in Matlab 2017b, 2018b, 2023b.
+
+#### _Additional data_
+Additional data from this study is available at zenodo.org, https://doi.org/10.5281/zenodo.10718950
+
+This data contains additional spontaneous events and correlation matrices for widefield and 2-photon datasets for each cortical area in this study. 
+
+The file powell24_data_info.m contains further descriptions of this additional data. 
