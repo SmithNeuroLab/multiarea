@@ -24,7 +24,7 @@ ppc_events=q.evtFrames;
 ppc_micronsPerPx=q.micronsPerPx;
 
 %S1
-q=load(fullfile(dataPath,'ppc_F0234_wfEvents.mat'));
+q=load(fullfile(dataPath,'s1_F0231_wfEvents.mat'));
 s1_events=q.evtFrames;
 s1_micronsPerPx=q.micronsPerPx;
 
@@ -53,7 +53,7 @@ v1_micronsPerPx=q.micronsPerPx;
 % We therefore must transpose roi before appliying the data from corrs
 % in order to reconstruct an image. 
 
-fileNames={'a1_F0234_wfCorrMat.mat','ppc_F0234_wfCorrMat.mat','ppc_F0234_wfCorrMat.mat',...
+fileNames={'a1_F0234_wfCorrMat.mat','s1_F0231_wfCorrMat.mat','ppc_F0234_wfCorrMat.mat',...
     'pfc_F0234_wfCorrMat.mat','v1_F0224_wfCorrMat.mat'};
 q=load(fullfile(dataPath,fileNames{1}));
 corrs=q.corrs;
@@ -95,6 +95,7 @@ events=q.eventData2p;
 corrs2p=q.corrMat2p;
 
 % To show event:
+figure
 scatter(cellXY(:,1),cellXY(:,2),'CData',events(:,50),'MarkerFaceColor','flat')
 colormap(copper)
 
